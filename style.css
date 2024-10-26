@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+/* html {
+    height: 100vh;
+} */
+
+body {
+    display: flex;
+    height: 100vh;
+}
+
+span {
+    font-style: italic;
+}
+
+.wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.left-section {
+    display: flex;
+    flex: 2;
+    background-image: url(images/halie-west-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-bottom: 10px;
+}
+
+.left-section-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 0, 0.3);
+    padding: 20px;
+    margin-top: 200px;
+}
+
+.logo {
+    height: 120px;
+}
+
+.logo-text {
+    font-size: 6rem;
+    color: white;
+    font-family: norse-bold;
+}
+
+.left-section-credit {
+    color: white;
+    text-align: center;
+}
+
+.right-section {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-section-uppertext {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.right-section-lowertext {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.form-container-floating {
+    box-shadow: 0px 3px 6px 1px rgba(0, 0, 0, 0.1);
+    padding: 20px 40px 30px 40px;
+}
+
+.form-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-left-container,
+.form-right-container {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.label {
+    font-size: 0.5rem;
+    font-weight: 600;
+}
+
+.input {
+    padding: 2px 4px 2px 4px;
+    width: 100%;
+    border: 1px solid grey;
+    outline: none;
+}
+
+.input:focus {
+    border: 1px solid blue;
+    /* border: 3px solid red; */
+}
+
+/* .input:invalid {
+    border-color: red;
+  } */
+
+.form_button {
+    margin: 30px 40px 30px;
+    background-color: rgb(50, 84, 50);
+    color: white;
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    border-style: none;
+}
+
+.form_loginContainer {
+    font-size: 0.8rem;
+    display: flex;
+    margin-left: 40px;
+}
+
+#phoneNumber {}
+
+.form_loginText {
+    font-weight: 600;
+}
+
+.form_loginLink {
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+    color: rgb(50, 84, 50);
+}
