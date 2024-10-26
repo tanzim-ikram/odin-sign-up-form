@@ -19,8 +19,28 @@ body {
     height: 100vh;
 }
 
-span {
-    font-style: italic;
+a:link {
+    color: rgb(50, 84, 50);
+}
+
+a:visited {
+    color: red;
+}
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: blue;
+}
+
+.credit-link:link {
+    color: white;
+}
+
+.credit-link:hover {
+    color: white;
 }
 
 .wrapper {
@@ -124,7 +144,7 @@ span {
     border-color: red;
   } */
 
-.form_button {
+.submit-button {
     margin: 30px 40px 30px;
     background-color: rgb(50, 84, 50);
     color: white;
@@ -133,19 +153,19 @@ span {
     border-style: none;
 }
 
-.form_loginContainer {
+.form-login-container {
     font-size: 0.8rem;
     display: flex;
     margin-left: 40px;
 }
 
-#phoneNumber {}
+/* #phoneNumber {} */
 
-.form_loginText {
+.form-login-text {
     font-weight: 600;
 }
 
-.form_loginLink {
+.form-login-link {
     text-decoration: none;
     font-weight: 600;
     margin-left: 5px;
