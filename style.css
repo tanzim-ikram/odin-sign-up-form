@@ -139,12 +139,102 @@ a:active {
 }
 
 .input {
+    display: flex;
+    flex-direction: column;
     font-size: 1rem;
     padding: 2px 4px 2px 4px;
     width: 100%;
     border: 1px solid grey;
     border-radius: 3px;
     outline: none;
+    margin-bottom: 20px;
+}
+
+.fname-warning, .lname-warning, .email-warning, .password-warning, .phone-warning, .confirm-pass-warning {
+    display: block;
+    position: relative;
+}
+
+.fname-warning::after {
+    position: absolute;
+    bottom: 0em;
+    font-size: 0.8em;
+    color: red;
+    content: "*First name should only contain letters.";
+    visibility: hidden;
+}
+  
+.input:invalid+.fname-warning::after {
+    visibility: visible;
+}
+
+.lname-warning::after {
+    position: absolute;
+    bottom: 0em;
+    font-size: 0.8em;
+    color: red;
+    content: "*Last name should only contain letters.";
+    visibility: hidden;
+}
+  
+.input:invalid+.lname-warning::after {
+    visibility: visible;
+}
+
+.email-warning::after {
+    position: absolute;
+    bottom: 0em;
+    font-size: 0.8em;
+    color: red;
+    content: "*Enter a valid email address.";
+    visibility: hidden;
+}
+  
+.input:invalid+.email-warning::after {
+    visibility: visible;
+}
+
+.phone-warning::after {
+    position: absolute;
+    bottom: 0em;
+    font-size: 0.8em;
+    color: red;
+    content: "*Phone number should be 11 digits long.";
+    visibility: hidden;
+}
+  
+.input:invalid+.phone-warning::after {
+    visibility: visible;
+}
+
+.password-warning, .confirm-pass-warning {
+    margin-top: 40px;
+}
+
+.password-warning::after {
+    position: absolute;
+    bottom: 0em;
+    font-size: 0.8em;
+    color: red;
+    content: "*Password should be at least 8 characters long.";
+    visibility: hidden;
+}
+  
+.input:invalid+.password-warning::after {
+    visibility: visible;
+}
+
+.confirm-pass-warning::after {
+    position: absolute;
+    bottom: 0em;
+    font-size: 0.8em;
+    color: red;
+    content: "*Password should be at least 8 characters long.";
+    visibility: hidden;
+}
+  
+.input:invalid+.confirm-pass-warning::after {
+    visibility: visible;
 }
 
 .input:focus {
