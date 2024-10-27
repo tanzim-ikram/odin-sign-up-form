@@ -17,7 +17,7 @@ body {
     position: static;
     height: 100vh;
     background-color: rgb(20, 20, 20);
-    
+
 }
 
 a:link {
@@ -151,9 +151,9 @@ a:active {
     border: 1px solid blue;
 }
 
-/* .input:invalid {
+.input:invalid {
     border-color: red;
-  } */
+}
 
 .submit-button {
     margin: 30px 40px 30px;
