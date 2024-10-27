@@ -162,6 +162,7 @@ a:active {
     padding: 10px 40px 10px 40px;
     border-radius: 5px;
     border-style: none;
+    cursor: pointer;
 }
 
 .form-login-container {
